@@ -27,3 +27,31 @@ npm install cypress --save-dev
 // set-up cypress project structure 1st time
 npx cypress open // open cypress launchpad
 ```
+
+## Running Tests
+You can run tests using Cypress Launchpad (GUI), by clicking on the spec file which you want to run Although you can use CLI and headless mode to run tests.
+
+1. Run all spec files in default electron browser with headless mode
+```
+npx cypress run
+```
+
+2. Run all spec files in default electron browser with headed mode
+```
+npx cypress run --headed
+```
+
+3. Run a specific spec file
+```
+npx cypress run --spec "/relative/path/to/spec/file"
+```
+
+4. Run all spec files while specifying broswer
+```
+npx cypress run --browser chrome
+```
+
+5. Run all spec file while specifying browser and mode of run
+```
+npx cypress run --browser chrome --headed
+```
